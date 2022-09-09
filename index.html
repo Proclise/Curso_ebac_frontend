@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+        <form id="form-numero">
+            <label>Campo A:</label> 
+            <input type="text" id="campo_A" placeholder="Numero A">
+            <label>Campo B:</label> 
+            <input type="text" id="campo_B" placeholder="Numero B">
+            <button type="submit"id="enviar_dados">Enviar</button>
+            </form>
+    <script>
+
+  const form = document.getElementById("form-numero")
+
+        function validaResposta(respostaCorreta) {
+            const validaArray = respostaCorreta.split(" ");
+            return validaArray.length >= 3;
+        }
+
+
+
+
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const campoBB = document.getElementById("campo_B");
+    if (validaResposta(campoBB.value)) {
+        alert("Correto: Numero B é maior do que o A")
+    }  else {
+        alert("Incorreto: Numero A é menor do que o B")
+    }
+
+
+  })
+            
+
+    </script>
+</body>
+</html>
