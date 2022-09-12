@@ -4,42 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+    <title>Agenda eletronica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estllos.css">
 </head>
 <body>
-        <form id="form-numero">
-            <label>Campo A:</label> 
-            <input type="text" id="campo_A" placeholder="Numero A">
-            <label>Campo B:</label> 
-            <input type="text" id="campo_B" placeholder="Numero B">
-            <button type="submit"id="enviar_dados">Enviar</button>
-            </form>
-    <script>
-
-  const form = document.getElementById("form-numero")
-
-        function validaResposta(respostaCorreta) {
-            const validaArray = respostaCorreta.split(" ");
-            return validaArray.length >= 3;
-        }
-
-
-
-
-  form.addEventListener("submit", function(e){
-    e.preventDefault();
-
-    const campoBB = document.getElementById("campo_B");
-    if (validaResposta(campoBB.value)) {
-        alert("Correto: Numero B é maior do que o A")
-    }  else {
-        alert("Incorreto: Numero A é menor do que o B")
-    }
-
-
-  })
-            
-
-    </script>
+    <div class="container">
+        <header>
+            <h1>Tabela de Contatos</h1>
+        </header>
+        <form id="form-tabela">
+            <input type="text" id="nome_agenda" required placeholder="Nome do contato"/>
+            <input type="text" id="telefone_agenda" required placeholder="Telefone de contato" maxlength="9"/>
+            <button type="submit">Cadastrar</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>
+                        Nome do contato
+                    </th>
+                    <th>
+                        Telefone do contato
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td id="dados_nome_final">---</td>
+                    <td id="dados_telefone_final">---</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="Java.js"></script>
 </body>
-</html>
+</html> 
