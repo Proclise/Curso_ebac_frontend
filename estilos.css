@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    margin-left: 35%;
+    margin-top: 5%;  
+    font-size: 20px; 
+}
+
+form input{
+    margin-left: 35%;
+    margin-top: 2%;
+    height: 20px;
+    width: 150px;
+}
+
+ul li {
+    margin-left: 35%;
+    margin-top: 2%;
+}
