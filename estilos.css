@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: block;
+
+}
+
+
+.itens-formulario {
+    margin-left: 500px;
+    margin-bottom: 70px;
+    margin-top: 50px;
+
+}
+
+
+.itens-formulario2 {
+    margin-left: 500px;
+
+}
+
+button {
+    margin-left: 500px;
+}
