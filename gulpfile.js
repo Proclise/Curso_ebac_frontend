@@ -7,13 +7,13 @@ const imagemin = require('gulp-imagemin')
 function compilaImagem () {
     return gulp.src('*.png')
     .pipe(imagemin())
-    .pipe(gulp.dest(''))
+    .pipe(gulp.dest('./build/img'))
 }
 
 function compilaJavaScript () {
     return gulp.src('*.js')
     .pipe(uglify())
-    .pipe(gulp.dest(''))
+    .pipe(gulp.dest('./build/js'))
 }
 
 function compilaSass () {
@@ -21,7 +21,7 @@ function compilaSass () {
         .pipe(sass({
             outputStyle: 'compressed'
         }))
-        .pipe(gulp.dest(''));
+        .pipe(gulp.dest('./build/scss'));
 }
 
 exports.default = function() {
