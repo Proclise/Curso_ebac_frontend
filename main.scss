@@ -1,0 +1,48 @@
+@use"fontes";
+@use "cores";
+@use "reset";
+
+body {
+    font-family: fontes.$fontPrincipal;
+}
+
+
+header {
+    padding: 25px 0px;
+    background-color: cores.$corPrimaria;
+    color: cores.$corTitulo;
+}
+
+section {
+    width: 100%;
+    margin: 0px auto;
+    margin-top: 20px;
+    background-color: cores.$corDefundo;
+}
+
+.product-item  {
+    color: cores.$corSecundaria;
+}
+
+.container h2 {
+    color: cores.$corTitulo;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    margin-left: 10px;
+}
+
+.product-button {
+    color: cores.$corTitulo;
+}
+
+
+img {
+    padding: 30px 0px;
+}
+
+p {
+    padding: 20px 0px;
+}
