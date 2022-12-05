@@ -1,5 +1,0 @@
-git add. 
-git commit "commit inicial" (usado quando o arquivos já foi criado)
-git branch -M (Nome da branch a ser incluida)
-git remote add origin (link do github onde os arquivos anexados)
-git push -u origin  (Nome da branch onde será transferido os arquivos)
